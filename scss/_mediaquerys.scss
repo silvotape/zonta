@@ -22,6 +22,20 @@
 	padding: 45px;
 	}
 
+.div_contenedor{
+	height:auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	padding: 30px;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $whiteT;
+	animation: bg 5s infinite;
+	overflow:hidden;
+}	
+
 iframe{
  	width: 50%;
  }
