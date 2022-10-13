@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 .iconos, .icono_nosotros, .icono_programas, .icono_causas {
   margin-bottom: 10px;
 }
 
-.nav_principal, .mizonta, .nav_principal--text {
+.nav_principal, .nav_principal--submenu li, .nav_principal--submenu, .nav_principal--text {
   font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 html {
@@ -20,9 +21,6 @@ html {
   margin: 0;
 }
 
-nav {
-  margin-top: 10px;
-}
 nav ul {
   list-style: none;
   margin: auto;
@@ -37,6 +35,14 @@ nav ul li a {
 
 body {
   background-color: #fff;
+}
+
+figure a {
+  text-decoration: none;
+}
+figure a:hover {
+  text-decoration: underline;
+  color: #02735E;
 }
 
 figcaption {
@@ -54,10 +60,6 @@ aside div h2 {
 
 aside {
   padding: 20px 50px;
-}
-
-section div {
-  border-bottom: solid 1px #e0ddd2;
 }
 
 /*--------- Propiedades de Formularios ---------*/
@@ -91,15 +93,11 @@ form input[type=submit] {
   width: 100%;
   padding: 8px 16px;
   margin-top: 32px;
-  border: 1px solid #bf874e;
+  border: 1px solid #147989;
   border-radius: 5px;
   display: block;
   color: #fff;
-  background-color: #bf874e;
-}
-
-form input[type=submit]:hover {
-  cursor: pointer;
+  background-color: #147989;
 }
 
 textarea {
@@ -115,6 +113,7 @@ textarea {
 }
 
 .div_forms {
+  width: 100%;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -124,22 +123,60 @@ textarea {
   margin-bottom: 100px;
 }
 
-.nav_principal--text {
-  color: rgb(255, 249, 212);
-}
-.nav_principal--text:hover {
-  font-weight: 500;
-  background-color: #f5BD47;
+iframe {
+  width: 100%;
+  height: 800px;
 }
 
-.mizonta {
-  color: rgb(130, 18, 44);
-  background-color: #f5BD47;
+.nav_principal--text {
+  color: #e7bc42;
+  font-weight: 400;
+  font-style: bold;
 }
-.mizonta:hover {
-  font-weight: 500;
-  background-color: #rgba 235, 183, 71, 1;
+.nav_principal--text:hover {
+  font-weight: 400;
+  background-color: #f5BD47;
   color: rgb(130, 18, 44);
+}
+
+.nav_principal--submenu {
+  color: #f5BD47;
+  font-weight: 400;
+  background-color: #A64149;
+  font-style: bold;
+}
+.nav_principal--submenu:hover {
+  font-weight: 400;
+  background-color: #f5BD47;
+  color: #A64149;
+}
+
+.nav_principal--submenu li {
+  color: #f5BD47;
+  font-weight: 400;
+  background-color: #A64149;
+  font-style: bold;
+}
+.nav_principal--submenu li:hover {
+  font-weight: 400;
+  background-color: #f5BD47;
+  color: #A64149;
+}
+
+.titulo-h1 {
+  font-size: 4.95rem;
+  font-style: bold;
+  font-family: "Lato", sans-serif;
+  color: rgb(130, 18, 44);
+  font-weight: 900;
+}
+
+.titulo-h2 {
+  font-size: 2.95rem;
+  font-style: bold;
+  font-family: "Lato", sans-serif;
+  color: #147989;
+  font-weight: 600;
 }
 
 .titulo_principal--l {
@@ -174,6 +211,20 @@ textarea {
   line-height: 35px;
 }
 
+.parrafo-zonta {
+  font-size: 3rem;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.parrafos_ppal {
+  font-size: 2rem;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  line-height: 35px;
+}
+
 .parrafos_nosotros {
   font-size: 1.3rem;
   font-style: normal;
@@ -194,6 +245,12 @@ textarea {
   font-family: "Merriweather", serif;
 }
 
+.sumate_p {
+  font-size: 2rem;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+}
+
 .div_header {
   background-image: url(../images/header-lg.webp);
   opacity: 0.9;
@@ -201,11 +258,51 @@ textarea {
 }
 
 .logo-iconosize {
-  width: 250px;
+  width: 280px;
+  height: auto;
 }
 
 .bg-softBordeau {
   background-color: #A64149;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+
+.div_icono_h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel_images {
+  object-fit: cover;
+  width: 950px;
+  height: 450px;
+}
+
+.que_zonta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 200px 30px;
+}
+
+.mapa {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  align-content: center;
 }
 
 .div_involucrarse_contenedor {
@@ -215,28 +312,33 @@ textarea {
   width: 100%;
   justify-content: space-evenly;
   margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #f5BD47;
-}
-.div_involucrarse_contenedor div {
-  width: 100%;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  font-family: "Merriweather", serif;
-  justify-content: center;
+  background: rgb(77, 148, 164);
+  background: radial-gradient(circle, rgb(77, 148, 164) 0%, rgba(231, 168, 66, 0.6979166667) 100%);
 }
 
-.div_icono_h1 {
+.sumate {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.mapas {
-  background: rgb(222, 190, 196);
-  background: radial-gradient(circle, rgba(222, 190, 196, 0.7567401961) 0%, rgba(227, 211, 193, 0.8323704482) 50%, rgba(224, 221, 210, 0.8295693277) 100%);
+.sumate_tit {
+  display: flex;
+  flex-direction: column;
+  background-color: #147989;
+  color: #fff;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.sumate_img {
+  background-image: url("./images/clubes.png");
 }
 
 .grilla {
@@ -266,6 +368,26 @@ textarea {
   height: auto;
 }
 
+.oval {
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.flex-center-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  padding: 0px 30px;
+}
+
+.cards {
+  width: 200px;
+  height: 120px;
+}
+
 .div_contenedor {
   display: flex;
   flex-direction: row;
@@ -276,6 +398,23 @@ textarea {
   align-items: center;
   background-color: #fff;
   animation: bg 5s infinite;
+}
+
+.div_contenedor_zonta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 30px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  animation: bg 5s infinite;
+}
+
+.paginas {
+  height: 50vh;
+  weigth: 100%;
 }
 
 .contenedor {
@@ -338,10 +477,6 @@ textarea {
   border: none;
 }
 
-.bg-carousel {
-  background-color: #147989;
-}
-
 .icono_causas {
   width: 30%;
 }
@@ -354,17 +489,16 @@ textarea {
   width: 50%;
 }
 
-.carousel {
+/*.carousel{
   display: flex;
   width: 80%;
   align-content: center;
   align-items: center;
   margin: 50px auto;
-  border-radius: 50px;
-  box-shadow: 10px 10px lightblue;
-  blur: 5px;
-}
-
+  border-radius:50px;
+  box-shadow: 10px 10px $lightblue;
+  blur:5px;
+}*/
 .img_inv1 {
   animation: slide-in1 4000ms;
   cursor: pointer;
@@ -460,7 +594,7 @@ textarea {
     align-content: center;
     justify-content: center;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     justify-content: space-evenly;
     margin: auto;
   }
@@ -506,6 +640,13 @@ textarea {
 }
 /* ----------- Media query 576px --------------*/
 @media only screen and (max-width: 576px) {
+  .flex-center-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0px 30px;
+  }
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, auto);
@@ -528,8 +669,8 @@ textarea {
     overflow: hidden;
   }
   iframe {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 400px;
   }
   form {
     width: 300px;
@@ -541,11 +682,13 @@ textarea {
 }
 .pie {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  height: 100px;
+  height: auto;
   align-items: center;
   justify-content: center;
   color: #fff;
+  padding-top: 20px;
 }
 
 .pie_icon--sm {
@@ -554,6 +697,13 @@ textarea {
 
 .pie_icon--m {
   width: 42px;
+}
+
+.pie_flex {
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

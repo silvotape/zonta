@@ -2,6 +2,41 @@
 
 // CONTENEDORES DE PAGINA INDEX.HTML
 
+.div_icono_h1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div_logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.carrousel_images{
+	object-fit: cover;
+	width: 950px;
+	height: 450px;
+}
+
+.que_zonta{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 200px 30px;
+
+}
+
+.mapa{
+	display: flex;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	align-content:center;
+	// object-fit: contain;
+}
+
 .div_involucrarse_contenedor{
 	display: flex;
 	flex-direction: row;
@@ -9,29 +44,38 @@
 	width: 100%;
 	justify-content: space-evenly;
 	margin-top: 20px;
-	margin-bottom: 20px;
-	background-color: #f5BD47 ;
-	div{
-		width: 100%;
-		display: flex;
-		align-content: center;
-		flex-wrap: wrap;
-		font-size: 1.2rem;
-		font-family: $fontSec;
-		justify-content: center;
+	
+	// background-color: #f5BD47 ;
+	background: rgb(77,148,164);
+  background: radial-gradient(circle, rgba(77,148,164,1) 0%, rgba(231,168,66,0.6979166666666667) 100%);
 
-	}
 }
 
-.div_icono_h1{
-	display: flex;
+.sumate{
+	display:flex;
 	flex-direction: column;
-	align-items: center;
+	align-content:center;
+	justify-content: center;
+	padding-left:10px;
+	padding-right:10px;
 }
 
-.mapas{
-	background:map-get($map:$colores,$key:'seis');
-	background:map-get($map:$colores,$key:'siete');
+.sumate_tit {
+	display:flex;
+	flex-direction: column;
+	background-color: $petrol;
+	color:$whiteT;
+	height: 400px;
+	width: 300px;
+	text-align:center;
+	justify-content: center;
+	align-content:center;
+
+}
+
+.sumate_img {
+	background-image:url("./images/clubes.png");
+
 }
 
 // Divs para páginas Nuestras Causas, Nuestros Programas, Novedades y eventos y Sobre nosotros 
@@ -66,8 +110,29 @@
 // DIV CONTENEDOR PARA PAGINAS CAUSAS, PROGRAMAS, NOVEDADES Y EVENTOS
 // Y SOBRE NOSOTROS
 
+.oval{
+	height: 50px;
+	width: 100px;
+	background-color:#555;
+	border-radius:50%
+}
 
-.div_contenedor{
+.flex-center-row{
+	display:flex;
+	align-items:center;
+	flex-direction: row;
+	margin: auto;
+	padding: 0px 30px
+}
+
+.cards{
+	width: 200px;
+	height: 120px;
+
+	}
+	
+
+	.div_contenedor{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -78,6 +143,28 @@
 	background-color: $whiteT;
 	animation: bg 5s infinite;
 }	
+
+
+
+
+.div_contenedor_zonta{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	padding: 30px;
+	justify-content: space-around;
+	align-items: center; 
+	background-color: $whiteT;
+	animation: bg 5s infinite;
+}	
+
+
+
+.paginas{
+	height:50vh;
+	weigth:100%;
+}
 
 
 // GRID PAGINA NOSOTROS
@@ -150,9 +237,9 @@
 	}
 
 
-.bg-carousel{
-	background-color: $petrol;
-}
+//.bg-carousel{
+	//background-color: $petrol;
+//}
 
 // ----------- EXTEND PARA ICONOS ------------------
 

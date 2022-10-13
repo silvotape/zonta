@@ -1,34 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 // Extend definido en _mixins
 
 .nav_principal--text{
 	@extend .nav_principal;
-	color:$softYellow;
+	color:$yellowT;
+	font-weight:400;
+	
+	font-style:bold;
 	&:hover{
-		font-weight:500;
+		font-weight:400;
 		background-color:$softOrange;
+		color:$bordeau;
+	}
+
+}
+
+.nav_principal--submenu{
+	@extend .nav_principal;
+	color:$softOrange;
+	font-weight:400;
+	background-color:$softBordeau;
+	font-style:bold;
+	&:hover{
+		font-weight:400;
+		background-color:$softOrange;
+		color:$softBordeau;
+	}
+
+}
+
+.nav_principal--submenu li{
+	@extend .nav_principal;
+	color:$softOrange;
+	font-weight:400;
+	background-color:$softBordeau;
+	font-style:bold;
+	&:hover{
+		font-weight:400;
+		background-color:$softOrange;
+		color:$softBordeau;
 	}
 
 }
 
 // Map-get definido en _mixins
 
-.mizonta{
-@extend .nav_principal;
-color:map-get($map:$colores,$key:'dos');
-background-color:$softOrange;
-	&:hover{
- 		font-weight:500;
- 		background-color:$medOrange;
- 		color:map-get($map:$colores,$key:'dos');
- 		}
- }
 
 // Includes definido en _mixins
 
+.titulo-h1{
+	@include texto-fontMain (4.95rem, bold);
+	color: $bordeau;
+	font-weight: 900;
+}
+
+.titulo-h2{
+	@include texto-fontMain (2.95rem, bold);
+	color: $petrol;
+	font-weight: 600;
+}
 
 .titulo_principal--l{
 	@include texto-fontMain (3.5rem, bold);
@@ -53,6 +87,17 @@ background-color:$softOrange;
 	line-height: 35px;
 }
 
+.parrafo-zonta{
+	@include texto-fontMain (3rem, normal);
+	font-weight: 300;
+	
+}
+
+.parrafos_ppal{
+	@include texto-fontMain (2rem, normal);
+	line-height: 35px;
+}
+
 .parrafos_nosotros{
 	@include texto-fontMain (1.3rem, normal);
 	line-height: 25px;
@@ -68,4 +113,7 @@ background-color:$softOrange;
 	@include texto-fontSec (2.5rem, normal);
 }
 
-
+.sumate_p{
+	@include texto-fontMain (2rem, normal);
+	
+}

@@ -5,11 +5,18 @@
 }
 
 .logo-iconosize{
-	width:250px;
+	width:280px;
+	height: auto;
 	}
 
 // bg de Navbar y footer
 
 .bg-softBordeau{
 	background-color:$softBordeau;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  width: 100%;
 }

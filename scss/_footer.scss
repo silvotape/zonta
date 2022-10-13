@@ -2,11 +2,13 @@
 
 .pie{
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
-	height: 100px;
+	height: auto;
 	align-items: center;
 	justify-content: center;
 	color:$whiteT;
+	padding-top:20px;
 	
 }
 
@@ -16,4 +18,12 @@
 
 .pie_icon--m{
 	width: 42px;
-}			
+}		
+
+.pie_flex{
+	display:flex;
+	text-align: right;
+	flex-direction: column;
+	margin-right: 10px;
+
+}	
